@@ -1,6 +1,6 @@
 # jquery_valid
 Валидация поля url по доменам, ниже код который проверяет наличие (com, net, org).
-
+<script>
 $('#domain_name').on('keyup', function(){
         var a = validateDomain($(this).val());
             selectValid(a);
@@ -23,3 +23,4 @@ $('#domain_name').on('keyup', function(){
            return reg.test(the_domain);
         }
 });
+</script>
